@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Slider</title>
+	<!-- custom css  -->
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 4</div>
+			<img class="images" src="slider-image-1.jpg">
+			<div class="text">we created</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">2 / 4</div>
+			<img class="images" src="slider-image-2.jpg">
+			<div class="text">we link</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">3 / 4</div>
+			<img class="images" src="slider-image-3.jpg">
+			<div class="text">it's webp</div>
+		</div>
+
+		<div class="mySlides fade">
+			<div class="numbertext">4 / 4</div>
+			<img class="images" src="slider-image-4.webp">
+			<div class="text">it's fine</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">❮</a>
+		<a class="next" onclick="plusSlides(1)">❯</a>
+
+	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+		<span class="dot" onclick="currentSlide(4)"></span>
+	</div>
+
+
+
+
+	<!-- javascript part start  -->
+	<script src="index.js"></script>
+</body>
+
+</html>
