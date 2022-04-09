@@ -48,7 +48,9 @@ body {
 
 .prev:hover,
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	color: #ff7a59;
+	border: #ff7a59 solid 1px;
+	background:#fff;
 }
 
 .text {
@@ -82,7 +84,9 @@ body {
 
 .active,
 .dot:hover {
-	background-color: #717171;
+	
+	animation: bounce 1s;
+	  
 }
 
 .fade {
@@ -99,7 +103,22 @@ body {
 		opacity: 1
 	}
 }
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 @media only screen and (max-width: 300px) {
 
 	.prev,
